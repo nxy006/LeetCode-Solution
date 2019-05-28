@@ -1,17 +1,19 @@
-// Source: https://leetcode.com/problems/maximum-subarray/
+// Source: https://leetcode.com/problems/spiral-matrix/
 // Author: NaN
 // Time: 2019-05-23
 
 /*
- * Some Method:
- *   (Wait...)
- *   Time complexity: O(n), Space complexity: O(1)
+ * Simulation Algorithm():
+ *   Forced simulation of execute process, according to right, down, left and up directions, and
+ *   reduce the allowable scope, until canot find valid value.
+ * 
+ *   Time complexity: O(n), Space complexity: O(1) <Maybe>
  * 
  * 模拟算法（递归实现）：
  *   模拟算法强行模拟执行过程，按右、下、左、上顺序移动，如果越过可用范围则转向，并缩小可用范围（行列的最大最小范围），
  *   直到找不到符合条件的值为止。
  * 
- *   时间复杂度：？，空间复杂度：？
+ *   时间复杂度：O(n)，空间复杂度：O(1) <Maybe>
  * 
  * Judge Result:
  *   Runtime: 4 ms, faster than 92.93% of C++ online submissions for Spiral Matrix.

@@ -1,16 +1,17 @@
-// Source: https://leetcode.com/problems/maximum-subarray/
+// Source: https://leetcode.com/problems/jump-game/
 // Author: NaN
 // Time: 2019-05-23
 
 /*
- * Some Method:
- *   (Wait...)
+ * Method:
+ *   According to thinking of geometry, this problem is draw circularity centre on every point in a
+ *   number axis, finally check whether full connection at number axis.
+ * 
  *   Time complexity: O(n), Space complexity: O(1)
  * 
  * 
- * 模拟解法：
+ * 算法：
  *   以几何的角度考虑，本题是在一个数轴上，以各个点为圆心，以给出的值为半径画圆，最终看整个数轴上是否有不相连接的部分。
- *   因此，
  * 
  * Judge Result:
  *   Runtime: 8 ms, faster than 99.17% of C++ online submissions for Jump Game.

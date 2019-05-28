@@ -3,8 +3,14 @@
 // Time: 2019-05-23
 
 /*
- * Some Method:
- *   (Wait...)
+ * Method:
+ *   Set A[0..i] that solution of arr[0..n] in 0..i range is known,
+ *   then A[0..i+1] = max(A[0..i], arr[i]). In other words, if current sum add new value less
+ *   than new value, then let new value as current sum go on.
+ * 
+ *   Note: Compare arr[0..n] with arr[i] is same to A[0..i] < 0, but the latter can reduce a
+ *   compute and avoid possibility of overstep the boundary.
+ * 
  *   Time complexity: O(n), Space complexity: O(1)
  * 
  * public static int maxSubArray(int[] A) {
@@ -16,7 +22,7 @@
  *   return maxSum;
  * }
  * 
- * 递推算法？：
+ * 算法：
  *   假设我们已知对 arr[0..n] 在 0..i 区间的解 A[0..i]，那么 A[0..i+1] = max(A[0..i], arr[i])，也就
  *   是说如果当前总和值加新的元素值小于新的元素值，就要开始新的总和值继续下去。
  * 
