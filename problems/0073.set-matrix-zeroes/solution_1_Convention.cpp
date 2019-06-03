@@ -1,4 +1,4 @@
-// Source: https://leetcode.com/problems/set-matrix-zeroes/submissions/
+// Source: https://leetcode.com/problems/set-matrix-zeroes/
 // Author: NaN
 // Time: 2019-05-30
 
